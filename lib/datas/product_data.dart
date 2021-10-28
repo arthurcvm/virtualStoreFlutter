@@ -18,4 +18,8 @@ class ProductData {
     sizes = snapshot.get("sizes");
     category = snapshot.reference.parent.id;
   }
+
+  Map<String, dynamic> toResumeMap() {
+    return {"title": title, "description": description, "price": price};
+  }
 }
