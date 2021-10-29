@@ -16,7 +16,7 @@ class ProductData {
     price = snapshot.get("price") + 0.0;
     images = snapshot.get("images");
     sizes = snapshot.get("sizes");
-    category = snapshot.reference.parent.id;
+    category = snapshot.reference.parent.parent.id;
   }
 
   Map<String, dynamic> toResumeMap() {
